@@ -1,0 +1,92 @@
+#myjpg {
+  width: 300px;
+  height: 300px;
+}
+
+nav {
+  background-color: #ffe4c4	;
+}
+
+body {
+  padding-top: 56px;
+   /* 或者使用你的導覽列的高度，通常 Bootstrap 的導覽列高度為 56px */
+}
+
+hr {
+  border: 3px solid #a0522d; /* 設定邊框樣式 */
+  margin: 20px 0; /* 設定上下邊距 */
+}
+
+
+.photo-and-text img {
+  flex: 0 0 auto; /* 不伸展，不縮小，寬度自適應 */
+  margin-right: 20px; /* 可以根據需要調整照片和文字之間的距離 */
+}
+h1{
+  white-space: nowrap;
+  color:white;
+}
+h2{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+
+#top {
+  width: 100%;
+  height: auto;
+  background-image: url("https://picsum.photos/1400/900?random=10");
+  background-size: cover;
+  text-align: center;
+  padding: 20px;
+}
+
+.photo-and-text {
+  background-color: #faebd7; /* 背景顏色 */
+  padding: 20px;
+}
+
+.githublogo {
+  width: 60px; /* 設置寬度 */
+  height: auto; /* 設置高度 */
+  margin: 15px; /* 設置外邊距，可根據需要調整 */
+}
+.iglogo {
+  width: 47px; /* 設置寬度 */
+  height: auto; /* 設置高度 */
+  margin: 15px; /* 設置外邊距，可根據需要調整 */
+}
+.linelogo {
+  width: 60px; /* 設置寬度 */
+  height: auto; /* 設置高度 */
+  margin: 15px; /* 設置外邊距，可根據需要調整 */
+}
+
+
+.img-thumbnail {
+  display: flex;
+  justify-content: space-between; /* 讓子元素平均分配在容器內 */
+  align-items: center; /* 讓子元素在垂直方向置中 */
+}
+
+.onelogo,
+.twologo,
+.threelogo {
+  width: 100%; /* 讓每個圖片寬度佔滿父元素（容器） */
+  height: auto;
+  border: 5px solid blanchedalmond; /* 添加 1px 寬度的黑色邊框 */
+  padding: 3px; /* 可以添加一點內邊距，使邊框與圖片之間有空間 */
+}
+  
+.nav-item{
+  margin: 10px;
+
+}
+
+
+/* 在鼠標移到照片的超連結時提供反應，使整張照片稍微反紅 */
+.img-thumbnail a:hover img {
+  filter: brightness(90%); /* 調整亮度，90% 表示稍微反紅 */
+  transition: filter 0.3s ease; /* 添加過渡效果 */
+}
